@@ -22,21 +22,22 @@
       hippotranslation:locale: en
       /the-medusa-news:
         jcr:primaryType: hippo:handle
-        jcr:mixinTypes: ['hippo:named', 'mix:referenceable']
+        jcr:mixinTypes: ['hippo:named', 'hippo:versionInfo', 'mix:referenceable']
         jcr:uuid: c580ac64-3874-4717-a6d9-e5ad72080abe
         hippo:name: The medusa news
-        /the-medusa-news:
+        hippo:versionHistory: 712413e8-926e-487d-9877-592433d42065
+        /the-medusa-news[1]:
           jcr:primaryType: myproject:newsdocument
           jcr:mixinTypes: ['mix:referenceable']
           jcr:uuid: a74a3901-74ca-4204-9a9e-b796c9b29185
-          hippo:availability: [live, preview]
+          hippo:availability: [live]
           hippostd:holder: admin
           hippostd:state: published
           hippostdpubwf:createdBy: admin
           hippostdpubwf:creationDate: 2013-11-12T13:03:00+01:00
-          hippostdpubwf:lastModificationDate: 2013-11-12T13:04:00+01:00
+          hippostdpubwf:lastModificationDate: 2020-11-04T20:32:34.301+07:00
           hippostdpubwf:lastModifiedBy: admin
-          hippostdpubwf:publicationDate: 2013-11-12T13:04:00+01:00
+          hippostdpubwf:publicationDate: 2020-11-04T20:32:46.898+07:00
           hippotranslation:id: 023c6fc4-c227-4ebc-93e4-7232a4508502
           hippotranslation:locale: en
           myproject:author: Alfred Anonymous
@@ -55,32 +56,113 @@
           /myproject:content:
             jcr:primaryType: hippostd:html
             hippostd:content: |-
-              <html>
-                        <body>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
 
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                        sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+              <p><img src="viognier-grapes-188185_640.jpg/{_document}/hippogallery:original" /></p>
 
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                        sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
 
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                        sunt in culpa qui officia deserunt mollit anim id est laborum </p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum&nbsp;</p>
+            /viognier-grapes-188185_640.jpg:
+              jcr:primaryType: hippo:facetselect
+              hippo:docbase: beff458e-e07a-4065-8cad-8d96b67d13ec
+              hippo:facets: []
+              hippo:modes: []
+              hippo:values: []
+          /myproject:image:
+            jcr:primaryType: hippogallerypicker:imagelink
+            hippo:docbase: 4709f797-61ae-4c36-93d4-63b5d50fc200
+            hippo:facets: []
+            hippo:modes: []
+            hippo:values: []
+        /the-medusa-news[2]:
+          jcr:primaryType: myproject:newsdocument
+          jcr:mixinTypes: ['mix:referenceable', 'mix:versionable']
+          jcr:uuid: fc8e8442-3b8c-48c5-831a-9c1165c3497a
+          hippo:availability: [preview]
+          hippostd:state: unpublished
+          hippostdpubwf:createdBy: admin
+          hippostdpubwf:creationDate: 2013-11-12T13:03:00+01:00
+          hippostdpubwf:lastModificationDate: 2020-11-04T20:32:34.301+07:00
+          hippostdpubwf:lastModifiedBy: admin
+          hippotranslation:id: 023c6fc4-c227-4ebc-93e4-7232a4508502
+          hippotranslation:locale: en
+          myproject:author: Alfred Anonymous
+          myproject:date: 2020-11-03T19:44:00+07:00
+          myproject:documenttype: news
+          myproject:introduction: Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+            ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+            sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+            mollit anim id est laborum
+          myproject:location: Rotterdam
+          myproject:source: ''
+          myproject:title: The medusa news
+          /myproject:content:
+            jcr:primaryType: hippostd:html
+            hippostd:content: |-
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
 
-                        </body>
-                        </html>
+              <p><img src="viognier-grapes-188185_640.jpg/{_document}/hippogallery:original" /></p>
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum&nbsp;</p>
+            /viognier-grapes-188185_640.jpg:
+              jcr:primaryType: hippo:facetselect
+              hippo:docbase: beff458e-e07a-4065-8cad-8d96b67d13ec
+              hippo:facets: []
+              hippo:modes: []
+              hippo:values: []
+          /myproject:image:
+            jcr:primaryType: hippogallerypicker:imagelink
+            hippo:docbase: 4709f797-61ae-4c36-93d4-63b5d50fc200
+            hippo:facets: []
+            hippo:modes: []
+            hippo:values: []
+        /the-medusa-news[3]:
+          jcr:primaryType: myproject:newsdocument
+          jcr:mixinTypes: ['mix:referenceable']
+          jcr:uuid: 7f63db73-ed6a-49ac-bbcb-86a4bf163f34
+          hippo:availability: []
+          hippostd:state: draft
+          hippostdpubwf:createdBy: admin
+          hippostdpubwf:creationDate: 2013-11-12T13:03:00+01:00
+          hippostdpubwf:lastModificationDate: 2020-11-04T20:32:16.825+07:00
+          hippostdpubwf:lastModifiedBy: admin
+          hippotranslation:id: 023c6fc4-c227-4ebc-93e4-7232a4508502
+          hippotranslation:locale: en
+          myproject:author: Alfred Anonymous
+          myproject:date: 2020-11-03T19:44:00+07:00
+          myproject:documenttype: news
+          myproject:introduction: Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+            ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+            sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+            mollit anim id est laborum
+          myproject:location: Rotterdam
+          myproject:source: ''
+          myproject:title: The medusa news
+          /myproject:content:
+            jcr:primaryType: hippostd:html
+            hippostd:content: |-
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+
+              <p><img src="viognier-grapes-188185_640.jpg/{_document}/hippogallery:original" /></p>
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum&nbsp;</p>
+            /viognier-grapes-188185_640.jpg:
+              jcr:primaryType: hippo:facetselect
+              hippo:docbase: beff458e-e07a-4065-8cad-8d96b67d13ec
+              hippo:facets: []
+              hippo:modes: []
+              hippo:values: []
           /myproject:image:
             jcr:primaryType: hippogallerypicker:imagelink
             hippo:docbase: 4709f797-61ae-4c36-93d4-63b5d50fc200
@@ -89,21 +171,22 @@
             hippo:values: []
       /2013-harvest:
         jcr:primaryType: hippo:handle
-        jcr:mixinTypes: ['hippo:named', 'mix:referenceable']
+        jcr:mixinTypes: ['hippo:named', 'hippo:versionInfo', 'mix:referenceable']
         jcr:uuid: 30092f4e-2ef7-4c72-86a5-8ce895908937
         hippo:name: 2013 harvest
-        /2013-harvest:
+        hippo:versionHistory: 8f9e99e9-0cac-40e1-9d31-4c743cfaf377
+        /2013-harvest[1]:
           jcr:primaryType: myproject:newsdocument
           jcr:mixinTypes: ['mix:referenceable']
           jcr:uuid: 9c13e9b3-9e42-40c1-8044-d72617897971
-          hippo:availability: [live, preview]
+          hippo:availability: [live]
           hippostd:holder: admin
           hippostd:state: published
           hippostdpubwf:createdBy: admin
           hippostdpubwf:creationDate: 2013-11-12T14:31:00+01:00
-          hippostdpubwf:lastModificationDate: 2013-11-12T14:31:00+01:00
+          hippostdpubwf:lastModificationDate: 2020-11-04T22:04:11.955+07:00
           hippostdpubwf:lastModifiedBy: admin
-          hippostdpubwf:publicationDate: 2013-11-12T14:31:00+01:00
+          hippostdpubwf:publicationDate: 2020-11-04T22:04:14.376+07:00
           hippotranslation:id: 1d942a27-0e6f-4d65-849e-f52116699f94
           hippotranslation:locale: en
           myproject:author: Alfred Anonymous
@@ -122,32 +205,113 @@
           /myproject:content:
             jcr:primaryType: hippostd:html
             hippostd:content: |-
-              <html>
-                        <body>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
 
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                        sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+              <p><img src="chien-thuatdoi.png/{_document}/hippogallery:original" /></p>
 
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                        sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
 
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                        sunt in culpa qui officia deserunt mollit anim id est laborum </p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum&nbsp;</p>
+            /chien-thuatdoi.png:
+              jcr:primaryType: hippo:facetselect
+              hippo:docbase: feffe79b-dd17-4976-8c28-82196c185c32
+              hippo:facets: []
+              hippo:modes: []
+              hippo:values: []
+          /myproject:image:
+            jcr:primaryType: hippogallerypicker:imagelink
+            hippo:docbase: beff458e-e07a-4065-8cad-8d96b67d13ec
+            hippo:facets: []
+            hippo:modes: []
+            hippo:values: []
+        /2013-harvest[2]:
+          jcr:primaryType: myproject:newsdocument
+          jcr:mixinTypes: ['mix:referenceable', 'mix:versionable']
+          jcr:uuid: a31d322b-487f-4dbb-9910-157de3e0f538
+          hippo:availability: [preview]
+          hippostd:state: unpublished
+          hippostdpubwf:createdBy: admin
+          hippostdpubwf:creationDate: 2013-11-12T14:31:00+01:00
+          hippostdpubwf:lastModificationDate: 2020-11-04T22:04:11.955+07:00
+          hippostdpubwf:lastModifiedBy: admin
+          hippotranslation:id: 1d942a27-0e6f-4d65-849e-f52116699f94
+          hippotranslation:locale: en
+          myproject:author: Alfred Anonymous
+          myproject:date: 2020-11-03T19:44:00+07:00
+          myproject:documenttype: news
+          myproject:introduction: Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+            ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+            sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+            mollit anim id est laborum
+          myproject:location: Rome
+          myproject:source: ''
+          myproject:title: 2013 harvest
+          /myproject:content:
+            jcr:primaryType: hippostd:html
+            hippostd:content: |-
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
 
-                        </body>
-                        </html>
+              <p><img src="chien-thuatdoi.png/{_document}/hippogallery:original" /></p>
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum&nbsp;</p>
+            /chien-thuatdoi.png:
+              jcr:primaryType: hippo:facetselect
+              hippo:docbase: feffe79b-dd17-4976-8c28-82196c185c32
+              hippo:facets: []
+              hippo:modes: []
+              hippo:values: []
+          /myproject:image:
+            jcr:primaryType: hippogallerypicker:imagelink
+            hippo:docbase: beff458e-e07a-4065-8cad-8d96b67d13ec
+            hippo:facets: []
+            hippo:modes: []
+            hippo:values: []
+        /2013-harvest[3]:
+          jcr:primaryType: myproject:newsdocument
+          jcr:mixinTypes: ['mix:referenceable']
+          jcr:uuid: 1cf33b05-7d92-4065-ae9d-a2c433e61813
+          hippo:availability: []
+          hippostd:state: draft
+          hippostdpubwf:createdBy: admin
+          hippostdpubwf:creationDate: 2013-11-12T14:31:00+01:00
+          hippostdpubwf:lastModificationDate: 2020-11-04T22:04:12.004+07:00
+          hippostdpubwf:lastModifiedBy: admin
+          hippotranslation:id: 1d942a27-0e6f-4d65-849e-f52116699f94
+          hippotranslation:locale: en
+          myproject:author: Alfred Anonymous
+          myproject:date: 2020-11-03T19:44:00+07:00
+          myproject:documenttype: news
+          myproject:introduction: Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+            ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+            sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+            mollit anim id est laborum
+          myproject:location: Rome
+          myproject:source: ''
+          myproject:title: 2013 harvest
+          /myproject:content:
+            jcr:primaryType: hippostd:html
+            hippostd:content: |-
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+
+              <p><img src="chien-thuatdoi.png/{_document}/hippogallery:original" /></p>
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum&nbsp;</p>
+            /chien-thuatdoi.png:
+              jcr:primaryType: hippo:facetselect
+              hippo:docbase: feffe79b-dd17-4976-8c28-82196c185c32
+              hippo:facets: []
+              hippo:modes: []
+              hippo:values: []
           /myproject:image:
             jcr:primaryType: hippogallerypicker:imagelink
             hippo:docbase: beff458e-e07a-4065-8cad-8d96b67d13ec
@@ -156,21 +320,22 @@
             hippo:values: []
       /the-gastropoda-news:
         jcr:primaryType: hippo:handle
-        jcr:mixinTypes: ['hippo:named', 'mix:referenceable']
+        jcr:mixinTypes: ['hippo:named', 'hippo:versionInfo', 'mix:referenceable']
         jcr:uuid: aeda2bcd-b21d-4ead-a2e6-c64a2ca051c8
         hippo:name: The gastropoda news
-        /the-gastropoda-news:
+        hippo:versionHistory: c66ac5fc-847a-4067-bbd6-496c6c1a0532
+        /the-gastropoda-news[1]:
           jcr:primaryType: myproject:newsdocument
           jcr:mixinTypes: ['mix:referenceable']
           jcr:uuid: 8160c5ab-a491-466f-90d0-191b70a84c5e
-          hippo:availability: [live, preview]
+          hippo:availability: [live]
           hippostd:holder: admin
           hippostd:state: published
           hippostdpubwf:createdBy: admin
           hippostdpubwf:creationDate: 2013-11-12T12:50:00+01:00
-          hippostdpubwf:lastModificationDate: 2013-11-12T12:52:00+01:00
+          hippostdpubwf:lastModificationDate: 2020-11-04T21:29:13.817+07:00
           hippostdpubwf:lastModifiedBy: admin
-          hippostdpubwf:publicationDate: 2013-11-12T12:52:00+01:00
+          hippostdpubwf:publicationDate: 2020-11-04T21:29:15.703+07:00
           hippotranslation:id: 89dd6756-93e9-4f50-ac64-20e5eeab4c64
           hippotranslation:locale: en
           myproject:author: Alfred Anonymous
@@ -189,32 +354,138 @@
           /myproject:content:
             jcr:primaryType: hippostd:html
             hippostd:content: |-
-              <html>
-                        <body>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
 
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                        sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+              <p><img src="thongthao.png/{_document}/myproject:featured" /></p>
 
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                        sunt in culpa qui officia deserunt mollit anim id est laborum </p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum&nbsp;</p>
 
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                        sunt in culpa qui officia deserunt mollit anim id est laborum </p>
+              <p><img src="gopr0201.jpg/{_document}/myproject:featured" /></p>
 
-                        </body>
-                        </html>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum&nbsp;</p>
+            /thongthao.png:
+              jcr:primaryType: hippo:facetselect
+              hippo:docbase: 5a3896a3-1a70-49d2-bd51-6a896f908e5c
+              hippo:facets: []
+              hippo:modes: []
+              hippo:values: []
+            /gopr0201.jpg:
+              jcr:primaryType: hippo:facetselect
+              hippo:docbase: c7cec11c-4bb1-4b2a-bec6-05212824890b
+              hippo:facets: []
+              hippo:modes: []
+              hippo:values: []
+          /myproject:image:
+            jcr:primaryType: hippogallerypicker:imagelink
+            hippo:docbase: 3c740fcf-8ec5-4f00-a713-ff96caa645c8
+            hippo:facets: []
+            hippo:modes: []
+            hippo:values: []
+        /the-gastropoda-news[2]:
+          jcr:primaryType: myproject:newsdocument
+          jcr:mixinTypes: ['mix:referenceable', 'mix:versionable']
+          jcr:uuid: 20026da5-4228-43e7-b8e6-aa7e139e078f
+          hippo:availability: [preview]
+          hippostd:state: unpublished
+          hippostdpubwf:createdBy: admin
+          hippostdpubwf:creationDate: 2013-11-12T12:50:00+01:00
+          hippostdpubwf:lastModificationDate: 2020-11-04T21:29:13.817+07:00
+          hippostdpubwf:lastModifiedBy: admin
+          hippotranslation:id: 89dd6756-93e9-4f50-ac64-20e5eeab4c64
+          hippotranslation:locale: en
+          myproject:author: Alfred Anonymous
+          myproject:date: 2020-11-03T19:44:00+07:00
+          myproject:documenttype: news
+          myproject:introduction: Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+            ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+            sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+            mollit anim id est laborum
+          myproject:location: Liverpool
+          myproject:source: ''
+          myproject:title: The gastropoda news
+          /myproject:content:
+            jcr:primaryType: hippostd:html
+            hippostd:content: |-
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+
+              <p><img src="thongthao.png/{_document}/myproject:featured" /></p>
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum&nbsp;</p>
+
+              <p><img src="gopr0201.jpg/{_document}/myproject:featured" /></p>
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum&nbsp;</p>
+            /thongthao.png:
+              jcr:primaryType: hippo:facetselect
+              hippo:docbase: 5a3896a3-1a70-49d2-bd51-6a896f908e5c
+              hippo:facets: []
+              hippo:modes: []
+              hippo:values: []
+            /gopr0201.jpg:
+              jcr:primaryType: hippo:facetselect
+              hippo:docbase: c7cec11c-4bb1-4b2a-bec6-05212824890b
+              hippo:facets: []
+              hippo:modes: []
+              hippo:values: []
+          /myproject:image:
+            jcr:primaryType: hippogallerypicker:imagelink
+            hippo:docbase: 3c740fcf-8ec5-4f00-a713-ff96caa645c8
+            hippo:facets: []
+            hippo:modes: []
+            hippo:values: []
+        /the-gastropoda-news[3]:
+          jcr:primaryType: myproject:newsdocument
+          jcr:mixinTypes: ['mix:referenceable']
+          jcr:uuid: 3c131328-4c89-4c42-b7e4-74f1d5a8d7f2
+          hippo:availability: []
+          hippostd:holder: admin
+          hippostd:state: draft
+          hippostdpubwf:createdBy: admin
+          hippostdpubwf:creationDate: 2013-11-12T12:50:00+01:00
+          hippostdpubwf:lastModificationDate: 2020-11-04T22:03:36.558+07:00
+          hippostdpubwf:lastModifiedBy: admin
+          hippotranslation:id: 89dd6756-93e9-4f50-ac64-20e5eeab4c64
+          hippotranslation:locale: en
+          myproject:author: Alfred Anonymous
+          myproject:date: 2020-11-03T19:44:00+07:00
+          myproject:documenttype: news
+          myproject:introduction: Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+            ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+            sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+            mollit anim id est laborum
+          myproject:location: Liverpool
+          myproject:source: ''
+          myproject:title: The gastropoda news
+          /myproject:content:
+            jcr:primaryType: hippostd:html
+            hippostd:content: |-
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+
+              <p><img src="thongthao.png/{_document}/myproject:featured" /></p>
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum&nbsp;</p>
+
+              <p><img src="gopr0201.jpg/{_document}/myproject:featured" /></p>
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum&nbsp;</p>
+            /thongthao.png:
+              jcr:primaryType: hippo:facetselect
+              hippo:docbase: 5a3896a3-1a70-49d2-bd51-6a896f908e5c
+              hippo:facets: []
+              hippo:modes: []
+              hippo:values: []
+            /gopr0201.jpg:
+              jcr:primaryType: hippo:facetselect
+              hippo:docbase: c7cec11c-4bb1-4b2a-bec6-05212824890b
+              hippo:facets: []
+              hippo:modes: []
+              hippo:values: []
           /myproject:image:
             jcr:primaryType: hippogallerypicker:imagelink
             hippo:docbase: 3c740fcf-8ec5-4f00-a713-ff96caa645c8

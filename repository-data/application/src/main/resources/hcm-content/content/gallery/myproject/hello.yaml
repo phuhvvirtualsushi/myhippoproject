@@ -2,15 +2,15 @@
   jcr:primaryType: hippogallery:stdImageGallery
   jcr:mixinTypes: ['mix:versionable']
   jcr:uuid: e1535f5a-81b8-49f4-aaf8-8835021ffb27
-  hippostd:foldertype: [new-image-folder]
-  hippostd:gallerytype: ['hippogallery:imageset']
+  hippostd:foldertype: [new-myproject-gogreenimageset-folder]
+  hippostd:gallerytype: ['myproject:gogreenimageset']
   /chien-thuatdoi.png:
     jcr:primaryType: hippo:handle
     jcr:mixinTypes: ['hippo:named', 'mix:referenceable']
     jcr:uuid: feffe79b-dd17-4976-8c28-82196c185c32
     hippo:name: chien thuatdoi.png
     /chien-thuatdoi.png:
-      jcr:primaryType: hippogallery:imageset
+      jcr:primaryType: myproject:gogreenimageset
       hippo:availability: [live, preview]
       hippogallery:filename: chien thuatdoi.png
       /hippogallery:thumbnail:
@@ -20,7 +20,7 @@
         hippogallery:width: 59
         jcr:data:
           type: binary
-          resource: /content/gallery/myproject/hello/chien-thuatdoi.png/chien-thuatdoi_thumbnail.png
+          resource: /content/gallery/myproject/hello/chien-thuatdoi.png/chien-thuatdoi.png/thumbnail/thumbnail.png
         jcr:lastModified: 2020-11-03T19:57:53.688+07:00
         jcr:mimeType: image/png
       /hippogallery:original:
@@ -29,6 +29,89 @@
         hippogallery:width: 826
         jcr:data:
           type: binary
-          resource: /content/gallery/myproject/hello/chien-thuatdoi.png/chien-thuatdoi_original.png
+          resource: /content/gallery/myproject/hello/chien-thuatdoi.png/chien-thuatdoi.png/original/original.png
         jcr:lastModified: 2020-11-03T19:57:53.688+07:00
         jcr:mimeType: image/png
+      /myproject:featured:
+        jcr:primaryType: hippogallery:image
+        hippogallery:height: 302
+        hippogallery:width: 359
+        jcr:data:
+          type: binary
+          resource: /content/gallery/myproject/hello/chien-thuatdoi.png/chien-thuatdoi.png/featured/featured.png
+        jcr:lastModified: 2020-11-04T21:47:49.709+07:00
+        jcr:mimeType: image/png
+  /thongthao.png:
+    jcr:primaryType: hippo:handle
+    jcr:mixinTypes: ['hippo:named', 'mix:referenceable']
+    jcr:uuid: 5a3896a3-1a70-49d2-bd51-6a896f908e5c
+    hippo:name: ThongTHao.png
+    /thongthao.png:
+      jcr:primaryType: myproject:gogreenimageset
+      hippo:availability: [live, preview]
+      hippogallery:filename: ThongTHao.png
+      /hippogallery:thumbnail:
+        jcr:primaryType: hippogallery:image
+        hippo:filename: ThongTHao.png
+        hippogallery:height: 41
+        hippogallery:width: 60
+        jcr:data:
+          type: binary
+          resource: /content/gallery/myproject/hello/thongthao.png/thongthao.png/thumbnail/thumbnail.png
+        jcr:lastModified: 2020-11-04T21:16:11.200+07:00
+        jcr:mimeType: image/png
+      /myproject:featured:
+        jcr:primaryType: hippogallery:image
+        hippogallery:height: 286
+        hippogallery:width: 409
+        jcr:data:
+          type: binary
+          resource: /content/gallery/myproject/hello/thongthao.png/thongthao.png/featured/featured.png
+        jcr:lastModified: 2020-11-04T21:47:50.018+07:00
+        jcr:mimeType: image/png
+      /hippogallery:original:
+        jcr:primaryType: hippogallery:image
+        hippogallery:height: 286
+        hippogallery:width: 409
+        jcr:data:
+          type: binary
+          resource: /content/gallery/myproject/hello/thongthao.png/thongthao.png/original/original.png
+        jcr:lastModified: 2020-11-04T21:16:11.200+07:00
+        jcr:mimeType: image/png
+  /gopr0201.jpg:
+    jcr:primaryType: hippo:handle
+    jcr:mixinTypes: ['hippo:named', 'mix:referenceable']
+    jcr:uuid: c7cec11c-4bb1-4b2a-bec6-05212824890b
+    hippo:name: GOPR0201.jpg
+    /gopr0201.jpg:
+      jcr:primaryType: myproject:gogreenimageset
+      hippo:availability: [live, preview]
+      hippogallery:filename: GOPR0201.jpg
+      /hippogallery:thumbnail:
+        jcr:primaryType: hippogallery:image
+        hippo:filename: GOPR0201.jpg
+        hippogallery:height: 45
+        hippogallery:width: 60
+        jcr:data:
+          type: binary
+          resource: /content/gallery/myproject/hello/gopr0201.jpg/gopr0201.jpg/thumbnail/thumbnail.jpg
+        jcr:lastModified: 2020-11-04T21:27:50.141+07:00
+        jcr:mimeType: image/jpeg
+      /myproject:featured:
+        jcr:primaryType: hippogallery:image
+        hippogallery:height: 302
+        hippogallery:width: 402
+        jcr:data:
+          type: binary
+          resource: /content/gallery/myproject/hello/gopr0201.jpg/gopr0201.jpg/featured/featured.jpg
+        jcr:lastModified: 2020-11-04T21:47:49.969+07:00
+        jcr:mimeType: image/jpeg
+      /hippogallery:original:
+        jcr:primaryType: hippogallery:image
+        hippogallery:height: 750
+        hippogallery:width: 1000
+        jcr:data:
+          type: binary
+          resource: /content/gallery/myproject/hello/gopr0201.jpg/gopr0201.jpg/original/original.jpg
+        jcr:lastModified: 2020-11-04T21:27:50.141+07:00
+        jcr:mimeType: image/jpeg

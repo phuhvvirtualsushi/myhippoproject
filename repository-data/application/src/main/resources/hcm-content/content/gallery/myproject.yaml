@@ -3,5 +3,5 @@
   jcr:mixinTypes: ['hippo:named', 'mix:referenceable']
   jcr:uuid: 44ba9d08-4d95-4b09-9f3b-87c4a59510b8
   hippo:name: My Project
-  hippostd:foldertype: [new-image-folder]
-  hippostd:gallerytype: ['hippogallery:imageset']
+  hippostd:foldertype: [new-myproject-gogreenimageset-folder]
+  hippostd:gallerytype: ['myproject:gogreenimageset']
