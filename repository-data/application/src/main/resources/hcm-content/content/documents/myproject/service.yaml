@@ -1,0 +1,174 @@
+/content/documents/myproject/service:
+  jcr:primaryType: hippostd:folder
+  jcr:mixinTypes: ['hippotranslation:translated', 'mix:versionable']
+  jcr:uuid: 209d8983-063e-444d-8f30-d97f7f8f2e8a
+  hippostd:foldertype: [new-translated-folder, new-document]
+  hippotranslation:id: ef7524db-5588-455a-b746-fcf98eba36e9
+  hippotranslation:locale: en
+  /about-us:
+    jcr:primaryType: hippo:handle
+    jcr:mixinTypes: ['hippo:named', 'hippo:versionInfo', 'mix:referenceable']
+    jcr:uuid: 9f3f13de-4f05-41b7-8647-5cf0a90677a1
+    hippo:name: About Us
+    hippo:versionHistory: e25bb9e5-9895-46c8-bf74-3e3ad595e344
+    /about-us[1]:
+      jcr:primaryType: myproject:contentdocument
+      jcr:mixinTypes: ['mix:referenceable']
+      jcr:uuid: ec9f5b01-67f0-4af7-b268-fc3bfdd3ffa4
+      hippo:availability: []
+      hippo:related___pathreference: []
+      hippostd:state: draft
+      hippostdpubwf:createdBy: admin
+      hippostdpubwf:creationDate: 2020-11-04T22:07:10.946+07:00
+      hippostdpubwf:lastModificationDate: 2020-11-05T21:15:04.575+07:00
+      hippostdpubwf:lastModifiedBy: admin
+      hippotranslation:id: a5ccd4e6-9378-4a12-bcbf-c4ad1c8f5d73
+      hippotranslation:locale: en
+      myproject:introduction: "An About Us page is your chance to tell the world:\r\
+        \nWho you are.\r\nWhat matters to you.\r\nWhat you do.\r\nHow you do it."
+      myproject:publicationdate: 2020-11-04T22:07:00+07:00
+      myproject:title: About Us
+      /myproject:content:
+        jcr:primaryType: hippostd:html
+        hippostd:content: |-
+          <p>It’s often one of the first stops when someone visits your website or blog.</p>
+
+          <p>An About Us page may be a deciding factor before you convince someone to convert, whether that comes in the form of:</p>
+
+          <ul>
+           <li>Making a purchase.</li>
+           <li>Downloading an awesome piece of content.</li>
+           <li>Signing up for your newsletter.</li>
+           <li>Requesting information or a demo.</li>
+          </ul>
+
+          <p>So how do you make your About Us page awesome (or more awesome??</p>
+    /about-us[2]:
+      jcr:primaryType: myproject:contentdocument
+      jcr:mixinTypes: ['mix:referenceable', 'mix:versionable']
+      jcr:uuid: 7449f1da-c150-468c-9ab9-62c83363fd5f
+      hippo:availability: [preview]
+      hippo:related___pathreference: []
+      hippostd:state: unpublished
+      hippostdpubwf:createdBy: admin
+      hippostdpubwf:creationDate: 2020-11-04T22:07:10.946+07:00
+      hippostdpubwf:lastModificationDate: 2020-11-04T22:07:51.701+07:00
+      hippostdpubwf:lastModifiedBy: admin
+      hippotranslation:id: a5ccd4e6-9378-4a12-bcbf-c4ad1c8f5d73
+      hippotranslation:locale: en
+      myproject:introduction: "An About Us page is your chance to tell the world:\r\
+        \nWho you are.\r\nWhat matters to you.\r\nWhat you do.\r\nHow you do it."
+      myproject:publicationdate: 2020-11-04T22:07:00+07:00
+      myproject:title: About Us
+      /myproject:content:
+        jcr:primaryType: hippostd:html
+        hippostd:content: |-
+          <p>It’s often one of the first stops when someone visits your website or blog.</p>
+
+          <p>An About Us page may be a deciding factor before you convince someone to convert, whether that comes in the form of:</p>
+
+          <ul>
+           <li>Making a purchase.</li>
+           <li>Downloading an awesome piece of content.</li>
+           <li>Signing up for your newsletter.</li>
+           <li>Requesting information or a demo.</li>
+          </ul>
+
+          <p>So how do you make your About Us page awesome (or more awesome??</p>
+    /about-us[3]:
+      jcr:primaryType: myproject:contentdocument
+      jcr:mixinTypes: ['mix:referenceable']
+      jcr:uuid: 06621fc2-36af-41d4-9f46-88145ba665c3
+      hippo:availability: [live]
+      hippo:related___pathreference: []
+      hippostd:state: published
+      hippostdpubwf:createdBy: admin
+      hippostdpubwf:creationDate: 2020-11-04T22:07:10.946+07:00
+      hippostdpubwf:lastModificationDate: 2020-11-04T22:07:51.701+07:00
+      hippostdpubwf:lastModifiedBy: admin
+      hippostdpubwf:publicationDate: 2020-11-04T22:07:57.593+07:00
+      hippotranslation:id: a5ccd4e6-9378-4a12-bcbf-c4ad1c8f5d73
+      hippotranslation:locale: en
+      myproject:introduction: "An About Us page is your chance to tell the world:\r\
+        \nWho you are.\r\nWhat matters to you.\r\nWhat you do.\r\nHow you do it."
+      myproject:publicationdate: 2020-11-04T22:07:00+07:00
+      myproject:title: About Us
+      /myproject:content:
+        jcr:primaryType: hippostd:html
+        hippostd:content: |-
+          <p>It’s often one of the first stops when someone visits your website or blog.</p>
+
+          <p>An About Us page may be a deciding factor before you convince someone to convert, whether that comes in the form of:</p>
+
+          <ul>
+           <li>Making a purchase.</li>
+           <li>Downloading an awesome piece of content.</li>
+           <li>Signing up for your newsletter.</li>
+           <li>Requesting information or a demo.</li>
+          </ul>
+
+          <p>So how do you make your About Us page awesome (or more awesome??</p>
+  /about:
+    jcr:primaryType: hippo:handle
+    jcr:mixinTypes: ['hippo:named', 'hippo:versionInfo', 'mix:referenceable']
+    jcr:uuid: 1f3be2f9-b964-4004-9bfb-3519df73b010
+    hippo:name: About
+    hippo:versionHistory: 22d7b670-1f74-41c7-bdcb-bce7fd80c720
+    /about[1]:
+      jcr:primaryType: myproject:contentdocument
+      jcr:mixinTypes: ['mix:referenceable']
+      jcr:uuid: e28602e1-0deb-487a-aafc-65e48fc551ff
+      hippo:availability: []
+      hippo:related___pathreference: []
+      hippostd:state: draft
+      hippostdpubwf:createdBy: admin
+      hippostdpubwf:creationDate: 2020-11-05T21:30:30.584+07:00
+      hippostdpubwf:lastModificationDate: 2020-11-05T21:30:50.875+07:00
+      hippostdpubwf:lastModifiedBy: admin
+      hippotranslation:id: 7b3759e1-6554-44a3-acf4-87b0b862865e
+      hippotranslation:locale: en
+      myproject:introduction: This is real
+      myproject:publicationdate: 0001-01-01T13:00:00+01:00
+      myproject:title: About Us
+      /myproject:content:
+        jcr:primaryType: hippostd:html
+        hippostd:content: <p>This is about us</p>
+    /about[2]:
+      jcr:primaryType: myproject:contentdocument
+      jcr:mixinTypes: ['mix:referenceable', 'mix:versionable']
+      jcr:uuid: eed3be08-07ae-4bce-96fa-b6632fde2491
+      hippo:availability: [preview]
+      hippo:related___pathreference: []
+      hippostd:state: unpublished
+      hippostdpubwf:createdBy: admin
+      hippostdpubwf:creationDate: 2020-11-05T21:30:30.584+07:00
+      hippostdpubwf:lastModificationDate: 2020-11-05T21:30:50.582+07:00
+      hippostdpubwf:lastModifiedBy: admin
+      hippotranslation:id: 7b3759e1-6554-44a3-acf4-87b0b862865e
+      hippotranslation:locale: en
+      myproject:introduction: This is real
+      myproject:publicationdate: 0001-01-01T13:00:00+01:00
+      myproject:title: About Us
+      /myproject:content:
+        jcr:primaryType: hippostd:html
+        hippostd:content: <p>This is about us</p>
+    /about[3]:
+      jcr:primaryType: myproject:contentdocument
+      jcr:mixinTypes: ['mix:referenceable']
+      jcr:uuid: 9ba553e2-246c-46e3-adce-6f7e060471c0
+      hippo:availability: [live]
+      hippo:related___pathreference: []
+      hippostd:state: published
+      hippostdpubwf:createdBy: admin
+      hippostdpubwf:creationDate: 2020-11-05T21:30:30.584+07:00
+      hippostdpubwf:lastModificationDate: 2020-11-05T21:30:50.582+07:00
+      hippostdpubwf:lastModifiedBy: admin
+      hippostdpubwf:publicationDate: 2020-11-05T21:30:54.555+07:00
+      hippotranslation:id: 7b3759e1-6554-44a3-acf4-87b0b862865e
+      hippotranslation:locale: en
+      myproject:introduction: This is real
+      myproject:publicationdate: 0001-01-01T13:00:00+01:00
+      myproject:title: About Us
+      /myproject:content:
+        jcr:primaryType: hippostd:html
+        hippostd:content: <p>This is about us</p>

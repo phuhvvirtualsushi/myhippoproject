@@ -1,0 +1,46 @@
+/content/documents/myproject/images:
+  jcr:primaryType: hippostd:folder
+  jcr:mixinTypes: ['hippotranslation:translated', 'mix:versionable']
+  jcr:uuid: bfde2cd3-80c9-4e67-8d66-3f2642a83095
+  hippostd:foldertype: [new-translated-folder, new-document]
+  hippotranslation:id: f243c729-0f40-45a4-8e2f-27d3d51edc01
+  hippotranslation:locale: en
+  /image-1:
+    jcr:primaryType: hippo:handle
+    jcr:mixinTypes: ['hippo:named', 'mix:referenceable']
+    jcr:uuid: fb8f0ac2-67b6-4a2c-aa84-6b3a96ce0ffb
+    hippo:name: Image 1
+    /image-1:
+      jcr:primaryType: myproject:gogreenimageset
+      jcr:mixinTypes: ['mix:versionable']
+      jcr:uuid: 57a870de-8be7-424e-a4e3-9f4f7cb48d83
+      hippo:availability: []
+      hippogallery:description: ''
+      /hippogallery:thumbnail:
+        jcr:primaryType: hippogallery:image
+        hippogallery:height: 33
+        hippogallery:width: 60
+        jcr:data:
+          type: binary
+          resource: /content/documents/myproject/images/image-1/image-1/thumbnail/thumbnail.png
+        jcr:lastModified: 2020-11-04T21:14:14.101+07:00
+        jcr:mimeType: image/png
+      /hippogallery:original:
+        jcr:primaryType: hippogallery:image
+        hippogallery:height: 768
+        hippogallery:width: 1366
+        jcr:data:
+          type: binary
+          resource: /content/documents/myproject/images/image-1/image-1/original/original.png
+        jcr:lastModified: 2020-11-04T21:14:57.328+07:00
+        jcr:mimeType: image/png
+      /myproject:featured:
+        jcr:primaryType: hippogallery:image
+        hippogallery:height: 302
+        hippogallery:width: 537
+        jcr:data:
+          type: binary
+          resource: /content/documents/myproject/images/image-1/image-1/featured/featured.png
+        jcr:encoding: UTF-8
+        jcr:lastModified: 2020-11-04T21:15:02.561+07:00
+        jcr:mimeType: image/png
