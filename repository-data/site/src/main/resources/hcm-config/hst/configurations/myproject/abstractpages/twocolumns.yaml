@@ -6,3 +6,6 @@ definitions:
       /main:
         jcr:primaryType: hst:component
         hst:template: twocolumns-main
+        /right:
+          jcr:primaryType: hst:component
+          hst:template: twocolumns-right

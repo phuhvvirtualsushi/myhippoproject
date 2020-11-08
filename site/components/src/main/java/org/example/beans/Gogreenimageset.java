@@ -9,6 +9,7 @@ import org.hippoecm.hst.content.beans.standard.HippoGalleryImageSet;
 @Node(jcrType = "myproject:gogreenimageset")
 public class Gogreenimageset extends HippoGalleryImageSet {
     public HippoGalleryImageBean getFeatured() {
-        return (HippoGalleryImageBean)this.getBean("myproject:featured", HippoGalleryImageBean.class);
+        return (HippoGalleryImageBean) this.getBean("myproject:featured",
+                HippoGalleryImageBean.class);
     }
 }

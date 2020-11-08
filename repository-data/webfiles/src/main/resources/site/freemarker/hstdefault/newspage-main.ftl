@@ -6,78 +6,43 @@
 
 <#-- @ftlvariable name="document" type="org.example.beans.NewsDocument" -->
 <#if document??>
-  <div class="body-wrapper">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-9 col-sm-9">
-          <div class="blog-post">
+  <div class="blog-post">
 
-            <div class="blog-post-type">
-              <i class="icon-news"> </i>
+    <div class="blog-post-type">
+      <i class="icon-news"> </i>
+    </div>
+
+    <div class="blog-span">
+      <div class="blog-post-featured-img">
+          <#if document.image?? && document.image.featured??>
+              <@hst.link var="img" hippobean=document.image.featured />
+            <div class="blog-post-featured-img">
+              <img src="${img}" alt="${document.title?html}" />
             </div>
+          </#if>
+      </div>
+        <#-- TODO 1: remove the fixed title and insert it dynamically -->
+      <h2>${document.title}</h2>
 
-            <div class="blog-span">
-              <div class="blog-post-featured-img">
-                  <#if document.image?? && document.image.featured??>
-                      <@hst.link var="img" hippobean=document.image.featured />
-                    <div class="blog-post-featured-img">
-                      <img src="${img}" alt="${document.title?html}" />
-                    </div>
-                  </#if>
-              </div>
-                <#-- TODO 1: remove the fixed title and insert it dynamically -->
-              <h2>${document.title}</h2>
+        <#-- TODO 2: remove the fixed introduction and insert it dynamically. -->
+      <p>${document.introduction}</p>
 
-                <#-- TODO 2: remove the fixed introduction and insert it dynamically. -->
-              <p>${document.introduction}</p>
+        <#-- TODO 3: remove the fixed content and insert it dynamically. Use the hst.html tag for that. -->
+      <div class="blog-post-body">
+          <@hst.html hippohtml=document.content />
+      </div>
 
-                <#-- TODO 3: remove the fixed content and insert it dynamically. Use the hst.html tag for that. -->
-              <div class="blog-post-body">
-                  <@hst.html hippohtml=document.content />
-              </div>
-
-              <div class="blog-post-details">
-                  <#-- TODO 4: show the date from the current item. Copy it from the newslist-main-newslist.ftl -->
-                <div class="blog-post-details-item blog-post-details-item-left icon-calendar">
+      <div class="blog-post-details">
+          <#-- TODO 4: show the date from the current item. Copy it from the newslist-main-newslist.ftl -->
+        <div class="blog-post-details-item blog-post-details-item-left icon-calendar">
                   <span class="date">
                     <#if document.date?? && document.date.time??>
-                          <p><@fmt.formatDate value=document.date.time type="Date"
-                            pattern="MMMM d, yyyy h:mm a" /></p>
-                            </#if>
+                      <p><@fmt.formatDate value=document.date.time type="Date"
+                          pattern="MMMM d, yyyy h:mm a" /></p>
+                    </#if>
                   </span>
-                </div>
-
-              </div>
-            </div>
-          </div>
-
         </div>
 
-        <div class="col-md-3 col-sm-3">
-          <div class="hst-container">
-            <div class="hst-container-item">
-              <div class="sidebar-block">
-                <h3 class="h3-sidebar-title sidebar-title">Related News</h3>
-
-                <div class="sidebar-content">
-                  <ul>
-                    <li>
-                      <a href="news-detail.html">Sonja Verde Joins GoGreen as VP of Marketing</a>
-                    </li>
-                    <li>
-                      <a href="news-facet.html">GoGreen Announces record growth in H1</a>
-                    </li>
-                    <li>
-                      <a href="news-facet.html">Hippo and GoGreen Collaborate to Launch a
-                        Comprehensive Website Redesign</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
       </div>
     </div>
   </div>

@@ -1,4 +1,4 @@
 /hst:hst/hst:configurations/myproject/hst:workspace/hst:sitemenus/main/home:
-  .meta:order-before: About Us
+  .meta:order-before: Product
   jcr:primaryType: hst:sitemenuitem
   hst:referencesitemapitem: root

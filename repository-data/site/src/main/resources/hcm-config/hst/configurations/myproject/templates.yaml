@@ -29,3 +29,18 @@ definitions:
       /twocolumns-right:
         jcr:primaryType: hst:template
         hst:renderpath: webfile:/freemarker/myproject/twocolumns-right.ftl
+      /newspage-relatenews:
+        jcr:primaryType: hst:template
+        hst:renderpath: webfile:/freemarker/myproject/newspage-relatednews.ftl
+      /productslist:
+        jcr:primaryType: hst:template
+        hst:renderpath: webfile:/freemarker/myproject/productslist.ftl
+      /productpage:
+        jcr:primaryType: hst:template
+        hst:renderpath: webfile:/freemarker/myproject/productpage.ftl
+      /featured-products:
+        jcr:primaryType: hst:template
+        hst:renderpath: webfile:/freemarker/myproject/featured-products.ftl
+      /custom-site:
+        jcr:primaryType: hst:template
+        hst:renderpath: webfile:/freemarker/myproject/custom-site.ftl
